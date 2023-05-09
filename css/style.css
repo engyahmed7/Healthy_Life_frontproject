@@ -145,3 +145,14 @@ hr{
 .card img{
     height: 200px;
 }
+
+a{
+    text-decoration: none;
+    /* color: black; */
+}
+.btn-outline-success a{
+    color:#4caf50
+}
+.btn-outline-success a:hover{
+    color:#fff
+}

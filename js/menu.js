@@ -82,6 +82,9 @@ const menuItems = [
     const button = document.createElement('button');
     button.classList.add('btn', 'btn-outline-success');
     button.innerText = 'Add To Cart';
+    button.addEventListener('click', () => {
+        addToCart(item);
+    })
   
     cardBody.appendChild(title);
     cardBody.appendChild(description);
@@ -96,3 +99,14 @@ const menuItems = [
     menuItemsContainer.appendChild(cardDiv);
   });
   
+  let cart = [];
+
+  if (localStorage.getItem('cart') != null) {
+    cart = JSON.parse(localStorage.getItem('cart'));
+}
+
+    const addToCart = (item) => {
+        cart.push(item);
+        localStorage.setItem('cart', JSON.stringify(cart));
+    }
+
