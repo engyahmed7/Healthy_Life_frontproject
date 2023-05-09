@@ -1,0 +1,143 @@
+body{
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+:root{
+    --main-color: #4caf50 ;
+}
+.active {
+    color:var(--main-color) !important;
+}
+
+.nav-item a:hover{
+    color: var(--main-color) !important;
+    border-bottom: 2px solidvar(--main-color);
+}
+
+.landing-img{
+    background-image: url('../images/grilled-chicken-rice-spicy-chickpeas-avocado-cabbage-pepper-buddha-bowl-dark-top-view.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.landing-txt{
+    height: 100vh;
+}
+.landing-txt h2{
+    font-family: 'Lobster', cursive;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+@media (max-width: 768px) {
+    .landing-img{
+    background-image: url('../images/natural-organic-cosmetic-concept_136595-14616.avif');
+    }
+    .landing-txt p{
+        color:black !important;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .nav-item a{
+        color:black !important;
+    }
+}
+
+.image-item img{
+    height: 200px;
+    cursor: pointer;
+}
+
+.col-md-12{
+ display: none;
+}
+
+.light-item{
+    width: 50%;
+    height: 500px;
+    background-image: url(../images/meal1.avif);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.lightBackground{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+}
+.icons i{
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+#close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.image-item{
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+}
+.image-item :hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+
+}
+
+.about i{
+    font-size: 30px;
+}
+.about i:hover{
+    color:var(--main-color)
+}
+
+.social-icons{
+    margin: 20px 0;
+    font-size: 10px;
+}
+
+.social-icons i:hover{
+    color:var(--main-color)
+}
+
+.col-md-4 ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+hr{
+    border: 1px solid var(--main-color);
+    width: 50%;
+    margin: 120px auto 0px;
+}
+
+.footer-text{
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.about{
+    background-image: url(../images/about.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
