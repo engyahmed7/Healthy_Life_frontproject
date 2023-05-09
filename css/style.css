@@ -141,3 +141,7 @@ hr{
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+
+.card img{
+    height: 200px;
+}
